@@ -148,7 +148,7 @@ a {
   line-height: 16px;
   font-weight: bold;
   content: "\f078";
-  color: $maincolor; 
+  color: black; 
   padding-left: 10px;
 }
 
@@ -157,7 +157,7 @@ a {
 }
 
 .drop-down-menu-active {
-  background-color: $backgroundcolor; 
+  background-color: inherit; 
   border-radius: 3px;
 }
 
@@ -3069,7 +3069,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   box-sizing: border-box;
   display: flex;
   min-height: 50vh;
-  padding: 6rem;
+  padding: 4rem;
   justify-content: center;
   flex-direction: column;
   position: relative;
@@ -3097,7 +3097,7 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 80%;
+  width: 100%;
   height: 100%;
   background-image: url("/static/plant_pictures/IMG_7462_Fotor.jpg");       
  
