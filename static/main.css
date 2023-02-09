@@ -797,15 +797,7 @@ footer a {
 
 /* #OVERLAY IMAGES WITH TEXT*/
 
-.big-image-akt-home{
-  height: 80vh;
-  width: 100vw;
-  position: relative;
-  background-size: cover;
-  opacity: 90%;
-  background-position: 50% 50%;
-  background-image: url("../static/akt/No18CenterDelineator/ClearAKTNo.18CenterMountDelineator.jpg");
-}
+
 
 
 .overlay-3 h1 {
