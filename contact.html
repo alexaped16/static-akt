@@ -4,11 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Contact AKT Inc. for all your traffic safety needs. Our knowledgeable team is ready to assist you with product inquiries, project requirements, and customized solutions. Reach out to us today.">
+    <link rel="apple-touch-icon" sizes="180x180" href="static/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="static/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="static/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
     <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link rel="stylesheet" type="text/css" href="/static/main.css">
-    <title>AKT</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title>Contact Us | AKT Inc. - Reflectors and Delineators Supplier for Inquiries</title>
 </head>
 <body>
 
@@ -63,40 +68,37 @@
    
     </div>
   
+    <div class="col-sm-12 col-md-6 ">
+        <div class="contact-form">
+            <h3 class="text-center">Request Information</h3>
+            <h4 class="text-center">Contact our sales team for a custom quote on products</h4>
+            <label for="txtName">Name:</label>
+            <input type="text" id="txtName" required>
+            <br>
+            <label for="txtEmail">Email Address:</label>
+            <input type="email" id="txtEmail" required />
+            <br />
+            <label for="txtPhone">Phone Number:</label>
+            <input type="tel" id="txtPhone" required>
+            <br />
+            <label for="txtCompany">Company Name:</label>
+            <input type="text" id="txtCompany" required />
+            <br />
+        
+            <label for="txtProduct">Product Inquiry:</label>
+            <input type="text" id="txtProduct" required>
+            <br>
+            <label for="txtMessage">Message:</label>
+            <textarea id="txtMessage" rows="4" required></textarea>
+            <br>
+            <button type="button" onclick="sendEmail()">Submit</button>
+            <p id="formMessage"></p>
+        </div>
+    </div>
 
 
 
-
-        <div class="col-sm-12 col-md-6 d-flex flex-column align-items-center">  
-            <form target="_blank" id="contact" action="https://formsubmit.co/275038c35617ac008a54a00dd8e71762" method="POST">
-                <h3>Request Information</h3>
-                <h4>Contact our sales team for a custom quote on products</h4>
-                <fieldset>
-                    <input placeholder="Your name" type="text" name="Name" tabindex="1" required autofocus>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Your Email Address" type="email" name="Email" tabindex="2" required>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Your Phone Number" type="tel" name="Phone" tabindex="3" required>
-                </fieldset>
-                <fieldset>
-                    <input placeholder="Your Company" type="text" name="Company" tabindex="4" required>
-                </fieldset>
-                <fieldset>
-                    <textarea placeholder="Type your message here...." name="Message" tabindex="5" required></textarea>
-                </fieldset>
-                <fieldset>
-                    <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-                </fieldset>
-
-                <fieldset>
-                    <input name="_next" type="hidden" value="https://aktinc.com/thanks.html" >
-                </fieldset>
-                <fieldset>
-                    <input type="hidden" name="_subject" value="New submission!" >
-                </fieldset>
-            </form>
+   
         </div>
     </div>
 

@@ -27,10 +27,9 @@ input, select { vertical-align:middle; }
 html {font-size: 100%;} /*16px*/
 
 body {
-  background: white; 
+  background: rgb(255, 255, 255); 
   font-family: 'PT Sans', sans-serif;
   font-weight: 400;
-  line-height: 1.75;
   color: #262524;
 }
 
@@ -45,7 +44,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   margin-top: 0;
-  font-size: 2.488rem;
+  font-size: 2rem;
 }
 
 h2 {font-size: 2.074rem;}
@@ -68,12 +67,16 @@ small, .text_small {font-size: 0.833rem;}
 
 nav {
   background-color: #d5d5d590;  
-  padding: 0 20px;
+  padding: 0 10px; 
+}
+
+.nav-menu img{
+  width: 120px !important;
 }
 
 a {
   color:#545454;
-  font-size: 22px;  
+  font-size: 18px;  
   letter-spacing: 2px;    
   text-decoration: none;
   font-weight: 400;
@@ -86,7 +89,7 @@ a {
 }
 
 .item {
-  padding: 15px;
+  padding: 5px;
 }
 
 .item a:hover,
@@ -105,7 +108,7 @@ a {
 
 .nav-menu li a {
   display: block;
-  padding: 20px 10px;
+  padding: 10px 10px;
 }
 
 .nav-menu li.drop-down-item a {
@@ -193,7 +196,7 @@ a {
       position: absolute;
       left: 0;
       top: 75px;
-      background: $backgroundcolor; 
+      background: white; 
   }
 
   .drop-down-menu-active {
@@ -309,7 +312,7 @@ footer ul {
 }
 .footer-widget ul li {
   display: inline-block;
-  float: left;
+  float: left; 
   width: 50%;
   margin-bottom: 12px;
 }
@@ -442,7 +445,6 @@ footer a {
     width: 100%;
     position: relative;
     z-index: 3;
-    vertical-align: bottom;
     padding: 0px 0px;
     box-sizing: border-box;
     color: #fff;
@@ -546,7 +548,7 @@ footer a {
   /* PRODUCT LINE  */
 
   .wrapper h1{
-    font-size: 3.0rem;
+    font-size: 1.0rem;
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     color: rgb(46, 44, 44);
@@ -611,7 +613,7 @@ footer a {
       height: auto;
       border-radius: 10px;
       color: #fff;
-      font-size: 1.5rem;
+      font-size: 1.0rem;
   }
   
   .product-line .back{
@@ -698,7 +700,7 @@ footer a {
   }
   
   .product-line .front  p{
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     margin-bottom: 2rem;
     position: relative;
   }
@@ -721,7 +723,7 @@ footer a {
     color: rgb(255, 255, 255);
     font-family: 'open sans' sans-serif;
     font-weight: 500;
-    font-size: 2.2rem; 
+    font-size: 1.0rem; 
   }
   
   @media screen and (max-width: 64rem){
@@ -797,15 +799,7 @@ footer a {
 
 /* #OVERLAY IMAGES WITH TEXT*/
 
-.big-image-akt-home{
-  height: 80vh;
-  width: 100vw;
-  position: relative;
-  background-size: cover;
-  opacity: 90%;
-  background-position: 50% 50%;
-  background-image: url("../static/akt/No18CenterDelineator/ClearAKTNo.18CenterMountDelineator.jpg");
-}
+
 
 
 .overlay-3 h1 {
@@ -821,6 +815,16 @@ footer a {
   font-size: 28px;
   font-family: 'Open Sans', sans-serif;
   font-weight:400;
+}
+
+.big-image-akt-home{
+  height: 90vh;
+  width: 100vw;
+  position: relative;
+  background-size: cover;
+  opacity: 70%; 
+  background-position: 50% 50%;
+  background-image: url("/static/akt/No18CenterDelineator/ClearAKTNo.18CenterMountDelineator.jpeg");
 }
 
 .big-image-product-line{
@@ -941,7 +945,6 @@ footer a {
 
 .overlay-oldworld h1 {
   font-size: 4rem;
-  letter-spacing: 5px;
   margin: 0 0 5px;
   margin-bottom: 2rem; 
   font-family: 'PT Sans', sans-serif;
@@ -1020,7 +1023,6 @@ footer a {
   letter-spacing: 0px;
   margin: 0 0 5px;
   font-family: 'open sans', sans-serif;
-  font-weight: 900;
 }
 
 
@@ -1035,7 +1037,7 @@ footer a {
 
 
 .big-image-divisions {
-  height: 100vh;
+  height: 60vh;
   width: 100vw;
   position: relative;
   background-size: cover;
@@ -1112,123 +1114,78 @@ footer a {
     opacity: 0.8; 
   }
   
-  #contact input[type="text"],
-  #contact input[type="email"],
-  #contact input[type="tel"],
-  #contact input[type="url"],
-  #contact textarea,
-  #contact button[type="submit"] {
-    font: 400 12px/16px "open sans", Helvetica, Arial, sans-serif;
-  }
+    /* Contact Container */
   
-  #contact {
-    background: white; 
-    padding: 25px;
-    margin: 150px 0;
-    box-shadow: 0 0 20px 0 rgba(236, 116, 10, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
-  }
-  
-  #contact h3 {
-    display: block;
-    font-size: 3rem;
-    font-weight: 300;
-    margin-bottom: 10px;
-  }
-  
-  #contact h4 {
-    margin: 5px 0 15px;
-    display: block;
-    font-size: 13px;
-    font-weight: 400;
-  }
-  
-  fieldset {
-    border: medium none !important;
-    margin: 0 0 10px;
-    min-width: 100%;
-    padding: 0;
-    width: 100%;
-  }
-  
-  #contact input[type="text"],
-  #contact input[type="email"],
-  #contact input[type="tel"],
-  #contact input[type="url"],
-  #contact textarea {
-    width: 100%;
-    border: 1px solid #ccc;
-    background: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-  }
-  
-  #contact input[type="text"]:hover,
-  #contact input[type="email"]:hover,
-  #contact input[type="tel"]:hover,
-  #contact input[type="url"]:hover,
-  #contact textarea:hover {
-    -webkit-transition: border-color 0.3s ease-in-out;
-    -moz-transition: border-color 0.3s ease-in-out;
-    transition: border-color 0.3s ease-in-out;
-    border: 1px solid #aaa;
-  }
-  
-  #contact textarea {
-    height: 100px;
-    max-width: 100%;
-    resize: none;
-  }
-  
-  #contact button[type="submit"] {
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    background: #F29F05;  
-    color: #FFF;
-    text-transform: uppercase;
-    letter-spacing: 2px; 
-    margin: 0 0 5px;
-    padding: 10px;
-    font-size: 15px;
-  }
-  
-  #contact button[type="submit"]:hover {
-    background: black; 
-    -webkit-transition: background 0.3s ease-in-out;
-    -moz-transition: background 0.3s ease-in-out;
-    transition: background-color 0.3s ease-in-out;
-  }
-  
-  #contact button[type="submit"]:active {
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-  }
-  
-  
-  #contact input:focus,
-  #contact textarea:focus {
-    outline: 0;
-    border: 1px solid #aaa;
-  }
-  
-  ::-webkit-input-placeholder {
-    color: #888;
-  }
-  
-  :-moz-placeholder {
-    color: #888;
-  }
-  
-  ::-moz-placeholder {
-    color: #888;
-  }
-  
-  :-ms-input-placeholder {
-    color: #888;
-  }
+    .contact-form {
+      background: white; 
+      padding: 25px;
+      margin: 150px 0;
+      box-shadow: 0 0 20px 0 rgba(236, 116, 10, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    }
+    
+    .contact-form h3 {
+      display: block;
+      font-size: 3rem;
+      font-weight: 300;
+      margin-bottom: 10px;
+    }
+    
+    .contact-form h4 {
+      margin: 5px 0 15px;
+      display: block;
+      font-size: 13px;
+      font-weight: 400;
+    }
+    
+    fieldset {
+      border: medium none !important;
+      margin: 0 0 10px;
+      min-width: 100%;
+      padding: 0;
+      width: 100%;
+    }
 
-  #contact-img{
-    opacity: 90%; 
-  }
+.contact-form a:hover{
+  color: rgb(132, 119, 119); 
+}
+  
+  
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      border: 1px solid #ccc;
+      background: #FFF;
+      margin: 0 0 5px;
+      padding: 10px;
+    }
+    
+  .contact-form textarea {
+      height: 100px;
+      max-width: 100%;
+      resize: none; 
+    }
+    
+  .contact-form button{
+      cursor: pointer;
+      width: 100%;
+      border: none;
+      background: #ed3d0d;  
+      color: #FFF;
+      text-transform: uppercase;
+      letter-spacing: 2px; 
+      margin: 0 0 5px;
+      padding: 10px;
+      font-size: 15px;
+    }
+  
+    
+    
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+      outline: 0;
+      border: 1px solid #aaa;
+}
+
 
   @media (max-width: 500px){
   .product-container{
@@ -1313,14 +1270,12 @@ footer a {
   .profile-card{
     margin-bottom:60px;
     text-align:center;
-    webkit-filter: grayscale(90%);
     filter: grayscale(90%);
     transition: all .5s;
     
   }
   
   .profile-card:hover{
-    webkit-filter: grayscale(0%);
     filter: grayscale(0%);
   }
   
@@ -1440,6 +1395,7 @@ footer a {
     .mt100 { margin-top: 100px; }
 
     .mr50 {margin-right: 50px;}
+    .ml50 {margin-left: 50px;}
 
     @media (max-width: 800px) {
       .mr50{
@@ -1466,7 +1422,7 @@ footer a {
     .nopr { padding-right: 0px; }
     .nopl { padding-left: 0px; }
     .pinside10 { padding: 10px; }
-    .pinside20 { padding: 20px; }
+    .pinside20 { padding-left: 20px; }
     .pinside30 { padding: 30px; }
     .pinside40 { padding: 40px; }
     .pinside50 { padding: 50px; }
@@ -1541,8 +1497,6 @@ footer a {
     .big-title { font-size: 4rem; font-weight: 600; color: white; }
     .little-title { font-size: 2rem; font-weight: 600; color: white; }
     .capital-title { text-transform: uppercase; font-size: 36px; font-weight: 600; color: black; }
-    .bdr-btm { }
-    .green-text { }
     .bg-boxshadow { -webkit-box-shadow: 0px 4px 16px 3px rgba(230, 216, 136, 0.5); -moz-box-shadow: 0px 4px 16px 3px rgba(213, 221, 234, .5); box-shadow: 0px 4px 16px 3px rgba(213, 221, 234, .5); }
     
     
@@ -1552,7 +1506,7 @@ footer a {
     .service-img-box { transition: box-shadow .5s; }
     .service-img-box:hover { -webkit-box-shadow: 0px 4px 26px 3px rgba(213, 221, 234, 1); -moz-box-shadow: 0px 4px 26px 3px rgba(213, 221, 234, 1); box-shadow: 0px 4px 26px 3px rgba(213, 221, 234, 1); }
     .service-img { position: relative; }
-    .service-content { }
+
     .service-content>h2 { margin-bottom: 0px; }
     .circle { background-color: #e3f0fe; width: 60px; height: 60px; border: 1px solid #F2E205; border-radius: 100px; color: #F2B705;; margin: -70px auto 40px auto; padding: 10px; text-align: center; line-height: 1.7; }
     .number { font-size: 24px; font-weight: 500; }
@@ -1918,7 +1872,6 @@ blockquote cite {
   font-size: 1rem;
   display: block;
   margin: 0.5rem 0 0 1.2rem;
-  text-style: italic;
 }
 @media (max-width: 43.75em) {
   blockquote cite {
@@ -3164,7 +3117,7 @@ body{ width:100%; overflow-x: hidden;}
 #product-index-container {
   color:rgba(255, 255, 255, 0.825); 
   text-transform: uppercase;
-  font-size:46px;
+  font-size:20px;
   font-weight:bold;
   padding-top:50px;  
   width:100%;
@@ -3173,7 +3126,7 @@ body{ width:100%; overflow-x: hidden;}
 }
 
 #flip {
-  height:80px;
+  height:50px;
   overflow:hidden;
 }
 
